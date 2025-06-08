@@ -165,5 +165,4 @@ JOIN products p ON oi.product_id = p.product_id
 GROUP BY p.name
 HAVING COUNT(*) > 1;
 
-
 -- DROP TABLE complaints, payments, order_items, orders, products, customers;

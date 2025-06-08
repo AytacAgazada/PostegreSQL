@@ -157,6 +157,7 @@ JOIN complaints cm ON c.citizen_id = cm.citizen_id
 GROUP BY c.full_name
 HAVING COUNT(cm.complaint_id) > 1;
 
+
 -- Citizens and their complaints
 SELECT c.full_name, cm.complaint_text
 FROM citizens c
