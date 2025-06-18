@@ -1,17 +1,17 @@
-CREATE TABLE Items (
+create table Items (
     ItemID INT PRIMARY KEY,
     ItemName VARCHAR(255),
     Category VARCHAR(100),
     Cost DECIMAL(10, 2)
 );
 
-CREATE TABLE Purchases (
+create table Purchases (
     PurchaseID INT PRIMARY KEY,
     BuyerName VARCHAR(255),
     PurchaseDate DATE
 );
 
-CREATE TABLE PurchaseDetails (
+create table PurchaseDetails (
     DetailID INT PRIMARY KEY,
     PurchaseID INT,
     ItemID INT,
